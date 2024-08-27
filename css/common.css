@@ -75,25 +75,25 @@
         z-index: 1000;
     }
 
-    nav>ul {
+    header nav>ul {
         display: flex;
         position: relative;
         gap: 30px;
     }
 
-    nav>ul>li>a:hover {
+    header nav>ul>li>a:hover {
         color: #F4010A;
     }
 
-    nav ul ul a:hover {
+    header nav ul ul a:hover {
         color: #F4010A;
     }
 
-    nav a {
+    header nav a {
         padding: 10px 0;
     }
 
-    nav ul ul {
+    header nav ul ul {
         position: absolute;
         top: 100%;
         border-top: 3px solid #fff;
@@ -108,13 +108,10 @@
         display: none;
     }
 
-    nav ul>li:nth-child(4) .submenu {
-        right: 3px;
-    }
 
     /*header responsive*/
     @media(max-width: 1200px) {
-        nav ul {
+        header nav ul {
             display: none;
         }
 
@@ -192,5 +189,97 @@
         .side_bar {
             width: 80vw;
             height: 100vh;
+        }
+    }
+
+    /*footer*/
+    footer {
+        color: #fff;
+        background-color: #F4010A;
+        min-height: 365px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        white-space: nowrap;
+    }
+
+    .footer_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        flex-grow: 1;
+
+    }
+
+    .footer_logo img {
+        max-width: 300px;
+    }
+
+    .footer_logo {
+        flex-grow: 1;
+    }
+
+    .footer_nav {
+        flex-grow: 1;
+        display: flex;
+        gap: 70px;
+    }
+
+    .footer_nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer_nav li:first-child {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .footer_nav li {
+        font-size: 18px;
+    }
+
+    .footer_nav li:not(:first-child):hover {
+        color: #000;
+    }
+
+    .sns {
+        flex-grow: 1.5;
+        display: flex;
+        justify-content: end;
+    }
+
+    .sns ul {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .sns li:hover img {
+        filter: brightness(0.1);
+    }
+
+    .location_btn a {
+        padding: 10px 30px;
+        font-size: 18px;
+        border-radius: 20px;
+        border: 3px solid #fff;
+    }
+
+    /*footer reponsive*/
+    @media(max-width: 1200px) {
+        .footer_wrap {
+            flex-direction: column;
+            gap: 100px;
+            margin: 50px 0;
+        }
+    }
+
+    @media(max-width:500px) {
+        .footer_nav {
+            gap: 30px;
         }
     }

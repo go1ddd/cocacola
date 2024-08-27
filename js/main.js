@@ -157,6 +157,8 @@ $(document).ready(function () {
         prevButton.style.animationName = keyframes[currentIndex - 1];
     });
 
+    /*brand*/
+
 })
 
 
