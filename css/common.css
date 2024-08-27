@@ -282,4 +282,21 @@
         .footer_nav {
             gap: 30px;
         }
+
+        .footer_nav li {
+            font-size: 14px;
+        }
+
+        .footer_nav li:first-child {
+            font-size: 12px;
+            ;
+        }
+
+        .sns {
+            transform: scale(0.7);
+        }
+
+        .footer_logo {
+            transform: scale(0.7);
+        }
     }
